@@ -1,5 +1,12 @@
 import './App.css'
 
+const numericButtonClasses = 'btn btn-primary w-100'
+const numericButtonClasses1 = 'btn btn-info w-100'
+
+const operatorButtonClasses = 'btn btn-warning w-100'
+const specButtonClasses = 'btn btn-danger w-100'
+
+
 function App() {
 
 
@@ -10,74 +17,93 @@ function App() {
       <table className='center'>
         <tbody>
           <tr>
-            <td colSpan={4}>
-              11
+            <td className='text-end' colSpan={4} >
+              <h2>0</h2>
             </td>
           </tr>
           <tr>
             <td>
-              21
+              <button type='button' className={specButtonClasses}
+              >C</button>
             </td>
             <td>
-              22
+              <button type='button' className={operatorButtonClasses}
+              >{'<'}</button>
             </td>
             <td>
-              23
+              <button type='button' className={operatorButtonClasses}
+              >%</button>
             </td>
             <td>
-              24
-            </td>
-          </tr> <tr>
-            <td>
-              31
-            </td>
-            <td>
-              32
-            </td>
-            <td>
-              33
-            </td>
-            <td>
-              34
+              <button type='button' className={operatorButtonClasses}
+              >/</button>
             </td>
           </tr> <tr>
             <td>
-              41
+              <button type='button' className={numericButtonClasses}
+              >7</button>
             </td>
             <td>
-              42
+              <button type='button' className={numericButtonClasses}
+              >8</button>
             </td>
             <td>
-              43
+              <button type='button' className={numericButtonClasses}
+              >9</button>
             </td>
             <td>
-              44
-            </td>
-          </tr> <tr>
-            <td>
-              51
-            </td>
-            <td>
-              52
-            </td>
-            <td>
-              53
-            </td>
-            <td>
-              54
+              <button type='button' className={operatorButtonClasses}
+              >x</button>
             </td>
           </tr> <tr>
             <td>
-              61
+              <button type='button' className={numericButtonClasses}
+              >4</button>
             </td>
             <td>
-              62
+              <button type='button' className={numericButtonClasses}
+              >5</button>
             </td>
             <td>
-              63
+              <button type='button' className={numericButtonClasses}
+              >6</button>
             </td>
             <td>
-              64
+              <button type='button' className={operatorButtonClasses}
+              >-</button>
+            </td>
+          </tr> <tr>
+            <td>
+              <button type='button' className={numericButtonClasses}
+              >1</button>
+            </td>
+            <td>
+              <button type='button' className={numericButtonClasses}
+              >2</button>
+            </td>
+            <td>
+              <button type='button' className={numericButtonClasses}
+              >3</button>
+            </td>
+            <td>
+              <button type='button' className={operatorButtonClasses}
+              >+</button>
+            </td>
+          </tr> <tr>
+            <td colSpan={2}>
+
+              <button type='button' className={numericButtonClasses}
+              >0</button>
+
+            </td>
+
+            <td>
+              <button type='button' className={numericButtonClasses}
+              >.</button>
+            </td>
+            <td>
+              <button type='button' className={specButtonClasses}
+              >=</button>
             </td>
           </tr>
         </tbody>
